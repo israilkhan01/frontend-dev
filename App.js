@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 const heading  = React.createElement("h1",{
     id:"heading"
 },"Hello world from React");
@@ -11,10 +11,16 @@ const jsxHeading = <h1>Welcome to JSX inside React </h1>;
 
 
 //React Component
+//React composition
 const HeadingComponent = ()=>{
-    return <h1>Welcome to React Component</h1>
+    return (
+        <div className="container">
+            {jsxHeading}
+            <h1>Welcome to React Component</h1>
+        </div>
+    )
 }
 console.log(jsxHeading)
 const root = ReactDOM.createRoot(document.getElementById("root"));
-console.log(parent)
+console.log(HeadingComponent)
 root.render(<HeadingComponent/>)
