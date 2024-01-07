@@ -1,0 +1,30 @@
+{
+  "name": "dev-frontend",
+  "version": "1.0.0",
+  "description": "learning new concepts in react",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israilkhan01/frontend-dev.git"
+  },
+  "author": "Israil khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israilkhan01/frontend-dev/issues"
+  },
+  "homepage": "https://github.com/israilkhan01/frontend-dev#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserslist":[
+    "last 2 versions"
+  ]
+}
