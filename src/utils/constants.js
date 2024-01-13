@@ -1,0 +1,3 @@
+export const RES_DATA_URL = "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.5549874&lng=77.2900787&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+export const IMG_CDN_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+export const LOGO_URL = "https://yt3.ggpht.com/ytc/AMLnZu_EC-ECXAxRAixWGEfMsE1rdSoetBHyxmLNdtCB=s900-c-k-c0x00ffffff-no-rj"
