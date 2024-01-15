@@ -7,6 +7,7 @@ import Contact from "./components/Contact";
 import Error from "./components/Error.js";
 import About from "./components/About.js";
 import { createBrowserRouter,RouterProvider ,Outlet} from "react-router-dom";
+import Userclass from "./components/Userclass.js";
 const AppLayout = () => {
   return (
     <>
@@ -21,21 +22,21 @@ const appRouter = createBrowserRouter([
   {
     path:"/",
     element:<AppLayout/>,
-    errorElement:<Error/>,
     children:[
       {
         path:"/",
         element:<Body/>
       },
       {
-        path:"/contact",
-        element:<Contact/>
-      },
-      {
         path:"/about",
         element:<About/>
+      },
+      {
+        path:"/contact",
+        element:<Contact/>
       }
-    ]
+    ],
+    errorElement:<Error/>,
   },
 ])
 const root = ReactDOM.createRoot(document.getElementById("root"));
