@@ -22,10 +22,10 @@ fetch_data();
   }, [])
   return (
     <>
-      <div className="search-container">
+      <div className="flex p-2 bg-slate-100">
         <input
           type="text"
-          className="search-input"
+          className="w-[200px] border px-2 py-1 mr-2 rounded-sm"
           placeholder="Search"
           value={searchText}
           onChange={(e) => {
@@ -33,7 +33,7 @@ fetch_data();
           }}
         />
         <button
-          className="search-btn"
+          className="bg-violet-600 text-white px-2 py-1 rounded-sm"
           onClick={() => {
             //need to filter the data
             const data = filterData(searchText, restaurants);
@@ -44,7 +44,7 @@ fetch_data();
           Search
         </button>
       </div>
-      <div className="restaurant-list">
+      <div className="flex py-6 px-3 flex-wrap">
         {restaurants.map((restaurant) => {
           return (
             <RestaurantCard {...restaurant.info} key={restaurant.info.id} />

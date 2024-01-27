@@ -1,8 +1,8 @@
 import { LOGO_URL } from "../utils/constants";
 const Title = () => (
-    <div className="logo-container">
+    <div className="w-24">
       <img
-        className="logo"
+        className="w-24"
         alt="logo"
         src={LOGO_URL}
       />

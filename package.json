@@ -4,8 +4,8 @@
   "description": "learning new concepts in react",
   "main": "App.js",
   "scripts": {
-    "start": "parcel index.html",
-    "build": "parcel build index.html",
+    "start": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html",
     "test": "jest"
   },
   "repository": {
@@ -20,7 +20,9 @@
   "homepage": "https://github.com/israilkhan01/frontend-dev#readme",
   "devDependencies": {
     "parcel": "^2.11.0",
-    "process": "^0.11.10"
+    "postcss": "^8.4.33",
+    "process": "^0.11.10",
+    "tailwindcss": "^3.4.1"
   },
   "dependencies": {
     "react": "^18.2.0",
