@@ -9,16 +9,20 @@ import Error from "./components/Error.js";
 // import About from "./components/About.js";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Userclass from "./components/Userclass.js";
+import { Provider } from "react-redux";
+import store from "./utils/reducers/store.js";
 
 const About = lazy(() => { return import("./components/About.js") })
 
 const AppLayout = () => {
   return (
-    <>
-      <Header />
-      <Outlet />
-      <Footer />
-    </>
+    <Provider store={store}>
+      <>
+        <Header />
+        <Outlet />
+        <Footer />
+      </>
+    </Provider>
   );
 };
 
@@ -35,7 +39,7 @@ const appRouter = createBrowserRouter([
         path: "/about",
         element: (<Suspense fallback={<h1>Loading....</h1>}>
           <About />
-          </Suspense>),
+        </Suspense>),
       },
       {
         path: "/contact",
